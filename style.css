@@ -29,7 +29,9 @@ a{
     font-weight: bold;
     text-align: center;
     padding: 10px 24px;
-    
+}
+.fa-arrow-right{
+    margin-left: 8px;
 }
 /*------------------
    heading part
