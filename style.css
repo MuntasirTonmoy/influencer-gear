@@ -2,14 +2,13 @@
    fonts
 --------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /* ----------------------
 Common design and utilities 
 ----------------------- */
 body{
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Inter', sans-serif; */
     color: #3A3A3A;
 }
 
@@ -19,6 +18,7 @@ a{
 .container{
     display: flex;
     align-items: center;
+    margin-bottom: 100px;
 }
 .link-button{
     width: 196px;
@@ -78,3 +78,76 @@ a{
   }
 
 
+/* -----------------
+  popular collection
+  --------------- */
+.popular-collection{
+    width: 1047px;
+    height: 1662px;
+    margin: 0 196px 100px 196px;
+}
+  .popular-text{
+      text-align: center;
+      font-weight: 600;
+      font-size: 28px;
+      margin-bottom: 64px;
+  }
+
+  .popular-item{
+    width: 329px;
+    height: 476px;
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgb(182, 175, 175);
+  }
+
+  .popular-item img{
+      width: 90%;
+      margin: 17px 15px;
+  }
+
+  .item-description{
+    margin: 0px 15px 17px 15px;
+   
+  }
+
+  .item-title{
+    color:#18191F;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.item-info{
+ font-family: 'Inter', sans-serif;
+ color: #787885;
+}
+
+.item-price{
+    color: black;
+    size: 24px;
+}
+.item-rating{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+.filled{
+    font-size: 10px;
+    color: #FB8200;
+}
+.not-filled{
+    color: lightgray;
+    font-size: 10px;
+}
+
+.item-rating-number{
+    margin-left: 8px;
+}
+.item-availability{
+    font-size: 14px;
+    font-weight: 700;
+}
+.item-availability p{
+    margin: 0 0 6px 0;
+}
