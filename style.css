@@ -10,6 +10,7 @@ Common design and utilities
 body{
     font-family: 'Poppins', sans-serif;
     color: #3A3A3A;
+    margin: 0;
 }
 
 a{ 
@@ -59,6 +60,7 @@ a{
     font-size: 52px;
     font-weight: 700;
     margin-bottom: 16px;
+    margin-top: 0;
 }
 .prebook-text p{
     width: 505px;
@@ -69,13 +71,17 @@ a{
     text-align: justify;
     
 }
-  .prebook-image{
-    position:absolute;
-    top: 190px;
-    width: 440px;
-    height: 414px;
+.camera-image-bg img{
+    width: 475px;
+    height: 475px;
+}
+.camera-image img{
+   position:absolute;
+   top: 190px;
+   width: 445px;
+   height: 414px;
       
-  }
+}
 
 
 /* -----------------
@@ -86,40 +92,44 @@ a{
     height: 1662px;
     margin: 0 196px 100px 196px;
 }
-  .popular-text{
-      text-align: center;
-      font-weight: 600;
-      font-size: 28px;
-      margin-bottom: 64px;
-  }
-
-  .popular-item{
+.popular-text{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 64px;
+}
+.popular-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.popular-item{
     width: 329px;
     height: 476px;
     /* border: 1px solid gray; */
     border-radius: 5px;
     box-shadow: 0 0 40px rgb(182, 175, 175);
-  }
+}
 
-  .popular-item img{
-      width: 90%;
-      margin: 17px 15px;
-  }
+.popular-item img{
+    width: 90%;
+    margin: 17px 15px;
+}
 
-  .item-description{
+.item-description{
     margin: 0px 15px 17px 15px;
    
-  }
+}
 
-  .item-title{
+.item-title{
     color:#18191F;
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 6px;
 }
 .item-info{
- font-family: 'Inter', sans-serif;
- color: #787885;
+    font-family: 'Inter', sans-serif;
+    color: #787885;
 }
 
 .item-price{
@@ -150,4 +160,35 @@ a{
 }
 .item-availability p{
     margin: 0 0 6px 0;
+}
+.see-more{
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+}
+/*----------------
+  footer 
+----------------*/
+footer{
+    background-color: #0A0826;
+    color: white;
+    padding: 10px 589px;
+}
+   .footer-information{
+   width: 262px;
+   height: 139px;
+   color: #D9DBE1;
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+}
+.footer-information h3{
+    font-size: 24px;
+    margin: 10px 0 5px 0;
+}
+.fab{
+    margin: 0px 8px;
+    font-size: 15px;
 }
