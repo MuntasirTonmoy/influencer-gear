@@ -22,7 +22,7 @@ a{
     margin-bottom: 100px;
 }
 .link-button{
-    width: 196px;
+    text-decoration: none;
     color: white;
     background-color: #E02C6D;
     border-radius: 41px;
@@ -30,6 +30,7 @@ a{
     font-weight: bold;
     text-align: center;
     padding: 10px 24px;
+    position: absolute;
 }
 .fa-arrow-right{
     margin-left: 8px;
@@ -67,7 +68,7 @@ a{
     height: 60px;
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
     text-align: justify;
     
 }
@@ -168,6 +169,39 @@ a{
     text-align: right;
     margin-top: 20px;
 }
+
+/* ----------------
+ about us
+ --------------- */
+.about-us{
+  margin: 0 165px 100px 165px;
+   width: 1110px;
+   height: 370px;
+   
+
+}
+.about-us-image img{
+   width: 450px;
+   height: 340px;
+}
+.about-us-text{
+    padding: 0 71px;
+}
+.about-us-text h1{
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+.about-us-text p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #6C6C6C;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+
 /*----------------
   footer 
 ----------------*/
@@ -175,6 +209,7 @@ footer{
     background-color: #0A0826;
     color: white;
     padding: 10px 589px;
+    position:relative;
 }
    .footer-information{
    width: 262px;
@@ -192,3 +227,4 @@ footer{
     margin: 0px 8px;
     font-size: 15px;
 }
+
