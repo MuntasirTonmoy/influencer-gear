@@ -30,7 +30,7 @@ a{
     font-weight: bold;
     text-align: center;
     padding: 10px 24px;
-    position: absolute;
+
 }
 .fa-arrow-right{
     margin-left: 8px;
@@ -134,7 +134,7 @@ a{
 }
 
 .item-price{
-    color: black;
+    color: rgb(20, 143, 20);
     size: 24px;
 }
 .item-rating{
@@ -190,7 +190,7 @@ a{
 .about-us-text h1{
     font-size: 38px;
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     font-weight: 700;
 }
 .about-us-text p{
@@ -199,6 +199,7 @@ a{
     color: #6C6C6C;
     margin-bottom: 16px;
     text-align: justify;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -209,7 +210,6 @@ footer{
     background-color: #0A0826;
     color: white;
     padding: 10px 589px;
-    position:relative;
 }
    .footer-information{
    width: 262px;
@@ -228,3 +228,81 @@ footer{
     font-size: 15px;
 }
 
+/* ------------
+Responsive
+------------ */
+
+/* mobile device */
+@media (max-width:688px) {
+    .logo-text h3{
+        font-size: 16px;
+        text-align: center;
+        margin: 35px 0 22px 0 ;
+    }
+    .prebook{
+        width: 100%;
+        margin: 0;
+    }
+    .container{
+        margin: 0;
+        flex-direction: column;
+    }
+   
+   .container>.prebook-text{ order: 2;}
+   
+   .prebook-text{
+        width: 100%;
+        margin: 0;
+    }
+   .prebook-text h1{
+        font-size: 28px;
+        margin-top: 14px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .prebook-text p{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 16px;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .container>.prebook-image{ order: 1;}
+    
+    .camera-image-bg img{
+        width: 255px;
+        height: 257px;
+    }
+    .camera-image img{
+        position:absolute;
+        top: 130px;
+        width: 202px;
+        height: 190px;
+           
+    }
+     
+    .popular-collection{
+        margin: 0;
+        width: 100%;
+    }
+    .popular-text{
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+
+    }
+    .popular-items{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .see-more{
+        margin-right: 10%;
+      
+    }
+
+    .about-us,footer,,logo-text{
+        display: none;
+    }
+
+}
