@@ -73,6 +73,10 @@ a{
     text-align: justify;
     
 }
+.link-button:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
 .camera-image-bg img{
     width: 475px;
     height: 475px;
@@ -222,7 +226,7 @@ footer{
     margin: 10px 0 5px 0;
 }
 .fab{
-    margin: 0px 8px;
+    margin: 0px 5px;
     font-size: 15px;
 }
 
@@ -265,6 +269,10 @@ Responsive
        margin: 16px 20px 20px 20px;
         font-size: 14px;
         text-align: center;
+    }
+    .link-button:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s;
     }
     
     .container>.prebook-image{ order: 1;}
@@ -357,4 +365,152 @@ Responsive
         margin: 20px 0px 5px 0px;
         text-align: center;
     }
+}
+
+/* -------------
+ tablet device
+ ------------ */
+@media (min-width: 689px) and (max-width: 992px){
+ 
+
+
+    .body{
+
+        margin: 0;
+    
+    }   
+    
+    .container{
+        margin-bottom: 60px;
+    }
+    .logo-text h3{
+        font-size: 20px;
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    .prebook{
+        width: 100%;
+        margin: 0;
+    }
+    .prebook-text{
+        width: 100%;
+        margin:10px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .prebook-text h1{
+        width: 100%;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 ;
+    }
+    .prebook-text p{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        text-align: left;
+        
+    }
+    .link-button:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+    .camera-image-bg img{
+        width: 250px;
+        height: 250px;
+    }
+    .camera-image img{
+       position:absolute;
+       top: 154px;
+       width: 200px;
+       height: 200px;
+          
+    }
+    
+    .popular-collection{
+        margin: 0;
+        width: 100%;
+    }
+    .popular-text{
+        font-size: 26px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+    }
+    .popular-items{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 5px;
+        justify-items: center;
+    }
+
+    .see-more{
+        width: 90%;
+        margin-left: 8%;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        text-align: left;
+      
+    }
+
+    .about-us{
+       
+         width: 100%;
+         margin: 0;
+        
+    }
+
+    .about-us-image img{
+        width: 410px;
+        height: 280px;
+     }
+     .about-us-text{
+         width: 100%;
+        padding: 0 0 0 20px;
+    
+    }
+    .about-us-text h1{
+        width: 100%;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-weight: 700;
+    }
+    .about-us-text p{
+        width: 90%;
+        font-size: 16px;
+        font-weight: 700;
+        color: #6C6C6C;
+        margin: 0 0 25px 0;
+        text-align: justify;
+        font-family: 'Inter', sans-serif;
+    }
+
+    footer{
+        width: 100%;
+        background-color: #0A0826;
+        color: white;
+        padding: 5px;
+    }
+       .footer-information{
+       width: 100%;
+       color: #D9DBE1;
+       font-size: 12px;
+       font-weight: bold;
+       text-align: center;
+    }
+    .footer-information h3{
+        width: 100%;
+        font-size: 16px;
+        margin: 20px 0px 5px 0px;
+        text-align: center;
+    }
+
+
+
+
 }
