@@ -30,6 +30,7 @@ a{
     font-weight: bold;
     text-align: center;
     padding: 10px 24px;
+    display: inline-block;
 
 }
 .fa-arrow-right{
@@ -58,7 +59,7 @@ a{
     margin-right: 133px;
 }
 .prebook-text h1{
-    font-size: 52px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 16px;
     margin-top: 0;
@@ -90,7 +91,6 @@ a{
   --------------- */
 .popular-collection{
     width: 1047px;
-    height: 1662px;
     margin: 0 196px 100px 196px;
 }
 .popular-text{
@@ -176,9 +176,7 @@ a{
 .about-us{
   margin: 0 165px 100px 165px;
    width: 1110px;
-   height: 370px;
    
-
 }
 .about-us-image img{
    width: 450px;
@@ -253,6 +251,7 @@ Responsive
    .prebook-text{
         width: 100%;
         margin: 0;
+        text-align: center;
     }
    .prebook-text h1{
         font-size: 28px;
@@ -261,9 +260,8 @@ Responsive
         text-align: center;
     }
     .prebook-text p{
-        width: 100%;
-        margin-bottom: 20px;
-        margin-top: 16px;
+        width: 90%;
+       margin: 16px 20px 20px 20px;
         font-size: 14px;
         text-align: center;
     }
@@ -271,13 +269,13 @@ Responsive
     .container>.prebook-image{ order: 1;}
     
     .camera-image-bg img{
-        width: 255px;
+        width: 240px;
         height: 257px;
     }
     .camera-image img{
         position:absolute;
-        top: 130px;
-        width: 202px;
+        top: 110px;
+        width: 200px;
         height: 190px;
            
     }
@@ -289,20 +287,57 @@ Responsive
     .popular-text{
         font-size: 16px;
         margin-bottom: 20px;
-        margin-top: 50px;
+        margin-top: 30px;
 
     }
     .popular-items{
+        width: 100%;
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
     }
     .see-more{
+        width: 90%;
         margin-right: 10%;
+        margin-bottom: 50px;
       
     }
 
-    .about-us,footer,,logo-text{
-        display: none;
+    .about-us{
+       
+         width: 100%;
+         margin: 0;
+        
     }
+
+    .about-us-image img{
+        width: 310px;
+        height: 180px;
+     }
+     .about-us-text{
+         width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .about-us-text h1{
+        width: 100%;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .about-us-text p{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        color: #6C6C6C;
+        margin-bottom: 25px;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+    }
+
+     footer{
+         display: none;
+     }
 
 }
