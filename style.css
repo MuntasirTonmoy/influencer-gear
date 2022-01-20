@@ -31,6 +31,7 @@ a{
     text-align: center;
     padding: 10px 24px;
     display: inline-block;
+    transition: transform 0.5s;
 
 }
 .fa-arrow-right{
@@ -66,7 +67,6 @@ a{
 }
 .prebook-text p{
     width: 505px;
-    height: 60px;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 16px;
@@ -75,15 +75,21 @@ a{
 }
 .link-button:hover{
     transform: scale(1.1);
-    transition: transform 0.5s;
+    
 }
 .camera-image-bg img{
     width: 475px;
     height: 475px;
+
 }
+.camera-image-bg{
+    position: relative;
+}
+
 .camera-image img{
    position:absolute;
-   top: 190px;
+   top: 30px;
+   left: 15px;
    width: 445px;
    height: 414px;
       
@@ -110,7 +116,7 @@ a{
 }
 .popular-item{
     width: 329px;
-    height: 476px;
+    /* height: 476px; */
     /* border: 1px solid gray; */
     border-radius: 5px;
     box-shadow: 0 0 40px rgb(182, 175, 175);
@@ -140,6 +146,7 @@ a{
 .item-price{
     color: rgb(20, 143, 20);
     size: 24px;
+    font-weight: bold;
 }
 .item-rating{
     font-size: 14px;
@@ -237,6 +244,7 @@ Responsive
 /* mobile device */
 @media (max-width:688px) {
     .logo-text h3{
+        width: 100%;
         font-size: 16px;
         text-align: center;
         margin: 35px 0 22px 0 ;
@@ -272,7 +280,6 @@ Responsive
     }
     .link-button:hover{
         transform: scale(1.1);
-        transition: transform 0.5s;
     }
     
     .container>.prebook-image{ order: 1;}
@@ -281,9 +288,12 @@ Responsive
         width: 240px;
         height: 257px;
     }
+    .camera-image-bg{
+        position: relative;
+    }
     .camera-image img{
         position:absolute;
-        top: 110px;
+        top: 30px;
         width: 200px;
         height: 190px;
            
@@ -303,6 +313,9 @@ Responsive
         width: 100%;
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
+    }
+    .popular-item{
+        width: 90%;
     }
     .see-more{
         width: 90%;
@@ -337,7 +350,7 @@ Responsive
     }
     .about-us-text p{
         width: 90%;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 700;
         color: #6C6C6C;
         margin: 0 20px 25px 20px;
@@ -346,7 +359,7 @@ Responsive
     }
 
     footer{
-        width: 100%;
+        /* width: 100%; */
         background-color: #0A0826;
         color: white;
         padding: 10px;
@@ -384,6 +397,7 @@ Responsive
         margin-bottom: 60px;
     }
     .logo-text h3{
+        width: 100%;
         font-size: 20px;
         text-align: left;
         margin-top: 50px;
@@ -398,7 +412,8 @@ Responsive
         width: 100%;
         margin:10px;
         padding-left: 20px;
-        padding-top: 20px;
+        padding-top: 40px;
+        padding-right: 30px;
     }
     .prebook-text h1{
         width: 100%;
@@ -416,15 +431,19 @@ Responsive
     }
     .link-button:hover{
         transform: scale(1.1);
-        transition: transform 0.5s;
     }
     .camera-image-bg img{
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
+    }
+    .camera-image-bg{
+        position: relative;
+        margin-right: 20px;
     }
     .camera-image img{
        position:absolute;
-       top: 154px;
+       top: 40px;
+       left: 40px;
        width: 200px;
        height: 200px;
           
